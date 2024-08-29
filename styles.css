@@ -1,0 +1,181 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column; /* Change direction to column for vertical stacking */
+    height: 100vh;
+    overflow-y: auto; /* Allow the entire container to scroll */
+}
+
+/* Layout Styles */
+.layout {
+    flex: 1;
+    overflow-y: auto; /* Make each layout scrollable */
+    position: relative;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #836FFF;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000; /* Ensure it stays on top while scrolling */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.search-box {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+}
+
+.image-text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-text img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-box {
+    background-color: #D8BFD8;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    width: calc(100% - 170px);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.stat-item {
+    background-color: #836FFF;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+    font-size: 14px;
+}
+
+/* User Information */
+.user-info {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    background-color: #836FFF;
+    color: white;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-button {
+    padding: 10px;
+    background-color: #836FFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.info-box {
+    background-color: #836FFF;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1;
+    font-size: 14px;
+    color: white;
+}
+
+.info-box h2 {
+    margin-bottom: 15px;
+}
+
+.next-button {
+    padding: 8px;
+    background-color: white;
+    color: #836FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Floating Help Icon */
+.help-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #836FFF;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Social Share Icons */
+.social-icons {
+    position: sticky;
+    top: 50%;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.social-icons img {
+    width: 30px;
+    cursor: pointer;
+}
